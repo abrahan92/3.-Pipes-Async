@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container" style="text-align:center">
+  <h1>
+    Pipes
+  </h1>
+
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Valor</th>
+      <th scope="col">Pipe</th>
+      <th scope="col">Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+
+      <td>{{ nombre }}</td>
+      <td>
+            contrasena:{{ activar }}
+            <br>
+            <button type="button" class="btn btn-outline-primary" (click)="activar = !activar">
+                Activar / Desactivar
+            </button>
+
+      </td>
+      <td>{{ nombre | contrasena:activar }}</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
